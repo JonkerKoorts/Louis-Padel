@@ -111,7 +111,7 @@ const Hero = () => {
         <br />
         <motion.button
           onClick={handleAbout}
-          className="mt-4 bg-gradient-to-r from-red-500 to-[#ffa500] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#ffa500] hover:to-red-500 hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
+          className="mt-4 bg-gradient-to-r from-red-500 to-[#ffa500] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#ffa500] hover:to-red-500 hover:transition-all transition-all hover:duration-1000 duration-1000"
           variants={buttonVariants}
         >
           Why Padel

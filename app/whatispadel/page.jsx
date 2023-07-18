@@ -60,8 +60,8 @@ const WhatIsPadel = () => {
     visible: {
       opacity: 1,
       transition: {
-        delayChildren: 0.5,
-        staggerChildren: 0.5,
+        delayChildren: 0.1,
+        staggerChildren: 0.3,
       },
     },
   };
@@ -139,7 +139,7 @@ const WhatIsPadel = () => {
       opacity: 1,
       transition: {
         type: "easeInOut",
-        delay: 2.8,
+        delay: 0,
         duration: 0,
       },
     },
@@ -201,7 +201,7 @@ const WhatIsPadel = () => {
                     type="number"
                     placeholder="Enter investment amount"
                     onChange={handleInvestmentChange}
-                    className="mt-4 text-black px-4 py-2 border-[#ffa500] border-[1px] font-bold rounded hover:bg-gradient-to-r hover:from-[#ffa500] hover:to-red-500 hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
+                    className="mt-4 text-black px-4 py-2 border-[#ffa500] border-[1px] font-bold rounded "
                     variants={childVariants}
                   />
 
@@ -222,25 +222,25 @@ const WhatIsPadel = () => {
                         }}
                         options={options}
                       />
-                      <motion.p
-                        className="text-sm md:text-base font-light mt-4"
-                        variants={childVariants}
-                      >
-                        This chart shows the expected return on investment (ROI)
-                        over the next 20 years based on the amount you have
-                        invested in Padel courts. The green line represents the
-                        accumulated profits from the courts over time.
-                        {breakEvenYear
-                          ? ` Based on your current investment, you are expected to break even in year ${breakEvenYear}.`
-                          : ` With the current investment, it's not projected to break even within 20 years.`}
-                      </motion.p>
-                      <p className="text-xs font-base">
-                        Please note that all these calculations are purely
-                        speculative and can vary based on numerous variables.
-                      </p>
                     </div>
                   )}
                 </motion.div>
+                <motion.p
+                  className="text-sm md:text-base font-light mt-4 md:mt-8"
+                  variants={childVariants}
+                >
+                  This chart shows the expected return on investment (ROI) over
+                  the next 20 years based on the amount you have invested in
+                  Padel courts. The green line represents the accumulated
+                  profits from the courts over time.
+                  {breakEvenYear
+                    ? ` Based on your current investment, you are expected to break even in year ${breakEvenYear}.`
+                    : ` With the current investment, it's not projected to break even within 20 years.`}
+                </motion.p>
+                <p className="text-xs font-base mt-2 md:mt-4">
+                  Please note that all these calculations are purely speculative
+                  and can vary based on numerous variables.
+                </p>
               </>
             )}
           </InView>
@@ -248,12 +248,12 @@ const WhatIsPadel = () => {
       </div>
       <motion.button
         onClick={handleContactClick}
-        className="mt-4 bg-gradient-to-r ml-8 from-red-500 to-[#ffa500] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#ffa500] hover:to-red-500 hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
+        className="mt-4 mb-6 md:mb-12 bg-gradient-to-r ml-8 from-red-500 to-[#ffa500] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#ffa500] hover:to-red-500 hover:transition-all transition-all hover:duration-1000 duration-1000"
         variants={buttonVariants}
       >
         Contact NOW
       </motion.button>
-      {showContact && <Contact bgColor="white" textColor="black" />}
+      {showContact && <Contact bgColor="#999999" textColor="black" />}
       <Footer />
     </>
   );
