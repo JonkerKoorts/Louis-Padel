@@ -130,8 +130,8 @@ const About = () => {
                   className="text-sm md:text-base font-light"
                   variants={childVariants}
                 >
-                  If you're considering a padel court for a new development, or
-                  seeking to repurpose an existing tennis court - we're here to
+                  If you are considering a padel court for a new development, or
+                  seeking to repurpose an existing tennis court - we are here to
                   help! Contact us today.
                 </motion.p>
               </div>

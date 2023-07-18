@@ -93,7 +93,7 @@ const Hero = () => {
           className="text-sm md:text-base font-light"
           variants={childVariants}
         >
-          Whether you're a sports club, private residence, or recreational
+          Whether you are a sports club, private residence, or recreational
           facility, we provide turnkey solutions that exceed expectations. Our
           commitment to excellence, innovative design, and use of premium
           materials set us apart as the industry leaders in Padel court
