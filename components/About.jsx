@@ -53,16 +53,19 @@ const About = () => {
       {({ inView, ref, entry }) => (
         <motion.div
           ref={ref}
-          className="bg-[#191919] text-white px-4 md:px-8 py-6 md:py-20 mx-auto"
+          className="bg-[#191919] text-white text-center md:text-left px-6 md:px-8 py-6 md:py-20 mx-auto"
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          <h1 className="text-center text-[40px] font-bold mb-20">About us</h1>
+          <h1 className="text-center text-[40px] font-bold ">About us</h1>
+          <br />
+          <br />
+          <br className="hide-on-mobile" />
           <div className="gap-4 md:gap-8 flex flex-col-reverse md:flex-row justify-around content-center items-center">
             <div className="flex flex-col">
               <motion.h1
-                className="text-[25px] md:text-[40px] font-bold mb-6"
+                className="text-[25px] md:text-[40px] font-bold mb-6 hide-on-mobile"
                 variants={childVariants}
               >
                 Padel Solutions

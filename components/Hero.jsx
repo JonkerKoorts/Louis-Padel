@@ -5,6 +5,8 @@ import heroImage from "../public/padelbackground.jpg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import Lottie from "lottie-react";
+import Animation from "../public/tennisball.json";
 
 const Hero = () => {
   const router = useRouter();

@@ -8,7 +8,7 @@ import { init } from "emailjs-com";
 init("HDYc48bYLOHynCmye"); // Please replace 'user_xyz' with your actual user ID from EmailJS
 import { useToast } from "@/components/ui/use-toast";
 
-const Contact = () => {
+const Contact = ({ bgColor = "#191919", textColor = "white" }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -75,13 +75,15 @@ const Contact = () => {
       {({ inView, ref }) => (
         <motion.div
           ref={ref}
-          className="bg-[#191919] text-white px-4 md:px-8 py-6 md:py-20 mx-auto"
+          className="text-white px-4 md:px-8 py-6 md:py-20 mx-auto"
+          style={{ backgroundColor: bgColor }}
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
           <motion.h1
             className="text-center text-[40px] font-bold mb-20"
+            style={{ color: textColor }}
             variants={childVariants}
           >
             Contact us

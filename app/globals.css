@@ -76,3 +76,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
