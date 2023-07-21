@@ -71,7 +71,7 @@ const Hero = () => {
         animate="visible"
       >
         <motion.h2
-          className="text-[40px] font-bold bg-gradient-to-r from-[#ffa500] to-red-500 text-transparent bg-clip-text"
+          className="text-[40px] font-bold bg-gradient-to-r from-[#144a9c] to-white text-transparent bg-clip-text"
           variants={childVariants}
         >
           Welcome to Padel Pro
@@ -111,7 +111,7 @@ const Hero = () => {
         <br />
         <motion.button
           onClick={handleAbout}
-          className="mt-4 bg-gradient-to-r from-red-500 to-[#ffa500] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#ffa500] hover:to-red-500 hover:transition-all transition-all hover:duration-1000 duration-1000"
+          className="mt-4 bg-gradient-to-r from-black to-[#144a9c] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#144a9c] hover:to-black hover:transition-all transition-all hover:duration-1000 duration-1000"
           variants={buttonVariants}
         >
           Why Padel

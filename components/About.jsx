@@ -53,7 +53,7 @@ const About = () => {
       {({ inView, ref, entry }) => (
         <motion.div
           ref={ref}
-          className="bg-[#191919] text-white text-center md:text-left px-6 md:px-8 py-6 md:py-20 mx-auto"
+          className="bg-[#f2f2f2] text-black text-center md:text-left px-6 md:px-8 py-6 md:py-20 mx-auto"
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -73,7 +73,7 @@ const About = () => {
               <motion.button
                 variants={buttonVariants}
                 onClick={handleContact}
-                className="mt-4 bg-gradient-to-r from-red-500 to-[#ffa500] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#ffa500] hover:to-red-500 hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
+                className="mt-4 bg-gradient-to-r from-black to-[#144a9c] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#144a9c] hover:to-black hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
               >
                 Get in touch
               </motion.button>
@@ -81,7 +81,7 @@ const About = () => {
             <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8">
               <div className="w-full md:w-60">
                 <motion.h2
-                  className="text-lg font-semibold mb-2 underline bg-gradient-to-l from-[#ffa500] to-red-500 bg-clip-text text-transparent"
+                  className="text-lg font-semibold mb-2 underline bg-gradient-to-l from-[#144a9c] to-black bg-clip-text text-transparent"
                   variants={childVariants}
                 >
                   Design and Manufacture
@@ -95,7 +95,7 @@ const About = () => {
                 </motion.p>
 
                 <motion.h2
-                  className="text-lg font-semibold mb-2 underline bg-gradient-to-l from-[#ffa500] to-red-500 bg-clip-text text-transparent"
+                  className="text-lg font-semibold mb-2 underline bg-gradient-to-l from-[#144a9c] to-black bg-clip-text text-transparent"
                   variants={childVariants}
                 >
                   Equipment and Installation
@@ -110,7 +110,7 @@ const About = () => {
               </div>
               <div className="w-full md:w-60">
                 <motion.h2
-                  className="text-lg font-semibold mb-2 underline bg-gradient-to-l from-[#ffa500] to-red-500 bg-clip-text text-transparent"
+                  className="text-lg font-semibold mb-2 underline bg-gradient-to-l from-[#144a9c] to-black bg-clip-text text-transparent"
                   variants={childVariants}
                 >
                   Support and Expansion
@@ -124,7 +124,7 @@ const About = () => {
                 </motion.p>
 
                 <motion.h2
-                  className="text-lg font-semibold mb-2 underline bg-gradient-to-l from-[#ffa500] to-red-500 bg-clip-text text-transparent"
+                  className="text-lg font-semibold mb-2 underline bg-gradient-to-l from-[#144a9c] to-black bg-clip-text text-transparent"
                   variants={childVariants}
                 >
                   Get in Touch

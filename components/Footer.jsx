@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="footer bg-black px-6 py-4 border-t-2 bg-gradient-to-r from-[#ffa500] to-red-500 border-t-white">
+    <div className="footer bg-black px-6 py-4 border-t-2 bg-gradient-to-r from-[#144a9c] to-black border-t-white">
       <div className="flex flex-col md:flex-row justify-between items-center text-center">
         <div className="logo text-2xl font-bold text-white mb-4 md:mb-0">
           LOGO

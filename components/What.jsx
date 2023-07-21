@@ -46,7 +46,7 @@ const What = () => {
       {({ inView, ref, entry }) => (
         <motion.div
           ref={ref}
-          className="bg-black text-white px-4 md:px-8 py-6 md:py-20 mx-auto"
+          className="bg-[#e6e6e6] text-black px-4 md:px-8 py-6 md:py-20 mx-auto"
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
@@ -58,7 +58,7 @@ const What = () => {
             <div className="gap-4 md:gap-8 flex flex-col md:flex-row justify-between content-center items-center">
               <div className="flex flex-col w-full md:w-1/2">
                 <motion.h1
-                  className="text-[25px] md:text-[40px] font-bold mb-6 bg-gradient-to-l from-[#ffa500] to-red-500 bg-clip-text text-transparent"
+                  className="text-[25px] md:text-[40px] font-bold mb-6 bg-gradient-to-l from-[#144a9c] to-black bg-clip-text text-transparent"
                   variants={childVariants}
                 >
                   The Perfect Time to Invest in Padel
@@ -84,8 +84,8 @@ const What = () => {
                       <div
                         className={`font-bold ${
                           activeItem === "item-1"
-                            ? "bg-gradient-to-l from-[#ffa500] to-red-500 bg-clip-text text-transparent"
-                            : "text-white"
+                            ? "bg-gradient-to-l from-[#144a9c] to-black bg-clip-text text-transparent"
+                            : "text-black"
                         }`}
                       >
                         Expertise in Padel Courts
@@ -104,8 +104,8 @@ const What = () => {
                       <div
                         className={`font-bold ${
                           activeItem === "item-2"
-                            ? "bg-gradient-to-l from-[#ffa500] to-red-500 bg-clip-text text-transparent"
-                            : "text-white"
+                            ? "bg-gradient-to-l from-[#144a9c] to-black bg-clip-text text-transparent"
+                            : "text-black"
                         }`}
                       >
                         Quality and Durability
@@ -124,8 +124,8 @@ const What = () => {
                       <div
                         className={`font-bold ${
                           activeItem === "item-3"
-                            ? "bg-gradient-to-l from-[#ffa500] to-red-500 bg-clip-text text-transparent"
-                            : "text-white"
+                            ? "bg-gradient-to-l from-[#144a9c] to-black bg-clip-text text-transparent"
+                            : "text-black"
                         }`}
                       >
                         Customised Solutions
@@ -144,8 +144,8 @@ const What = () => {
                       <div
                         className={`font-bold ${
                           activeItem === "item-4"
-                            ? "bg-gradient-to-l from-[#ffa500] to-red-500 bg-clip-text text-transparent"
-                            : "text-white"
+                            ? "bg-gradient-to-l from-[#144a9c] to-black bg-clip-text text-transparent"
+                            : "text-black"
                         }`}
                       >
                         I am not sure what Padel is
@@ -154,7 +154,7 @@ const What = () => {
                     <AccordionContent>
                       <button
                         onClick={handleAbout}
-                        className="mt-4 bg-gradient-to-r from-red-500 to-[#ffa500] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#ffa500] hover:to-red-500 hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
+                        className="mt-4 bg-gradient-to-r from-black to-[#144a9c] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#144a9c] hover:to-black hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
                       >
                         Click Here
                       </button>

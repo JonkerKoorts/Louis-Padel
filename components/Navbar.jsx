@@ -46,7 +46,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="sticky top-0 z-50 bg-black px-6 py-4 border-b-2 bg-gradient-to-r from-[#ffa500] to-red-500 border-b-white">
+    <nav className="sticky top-0 z-50 bg-black px-6 py-4 border-b-2 bg-gradient-to-r from-[#144a9c] to-black border-b-white">
       <div className="flex justify-between items-center">
         <div className="text-2xl font-bold text-white md:text-3xl">
           <Link href="/">Logo</Link>

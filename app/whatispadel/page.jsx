@@ -170,7 +170,7 @@ const WhatIsPadel = () => {
                     variants={childVariants}
                   >
                     What is Padel?
-                    <p className="text-xs font-bold bg-gradient-to-r from-red-500 to-[#ffa500] bg-clip-text text-transparent mt-[-10px]">
+                    <p className="text-xs font-bold bg-gradient-to-r from-black to-[#144a9c] bg-clip-text text-transparent mt-[-10px]">
                       And how do I profit?
                     </p>
                   </motion.h2>
@@ -201,7 +201,7 @@ const WhatIsPadel = () => {
                     type="number"
                     placeholder="Enter investment amount"
                     onChange={handleInvestmentChange}
-                    className="mt-4 text-black px-4 py-2 border-[#ffa500] border-[1px] font-bold rounded "
+                    className="mt-4 text-black px-4 py-2 border-[#144a9c] border-[1px] font-bold rounded "
                     variants={childVariants}
                   />
 
@@ -248,12 +248,12 @@ const WhatIsPadel = () => {
       </div>
       <motion.button
         onClick={handleContactClick}
-        className="mt-4 mb-6 md:mb-12 bg-gradient-to-r ml-8 from-red-500 to-[#ffa500] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#ffa500] hover:to-red-500 hover:transition-all transition-all hover:duration-1000 duration-1000"
+        className="mt-4 mb-6 md:mb-12 bg-gradient-to-r ml-8 from-black to-[#144a9c] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#144a9c] hover:to-black hover:transition-all transition-all hover:duration-1000 duration-1000"
         variants={buttonVariants}
       >
         Contact NOW
       </motion.button>
-      {showContact && <Contact bgColor="#999999" textColor="black" />}
+      {showContact && <Contact bgColor="#f2f2f2" textColor="black" />}
       <Footer />
     </>
   );

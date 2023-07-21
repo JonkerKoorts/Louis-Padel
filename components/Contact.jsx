@@ -8,7 +8,7 @@ import { init } from "emailjs-com";
 init("HDYc48bYLOHynCmye"); // Please replace 'user_xyz' with your actual user ID from EmailJS
 import { useToast } from "@/components/ui/use-toast";
 
-const Contact = ({ bgColor = "#191919", textColor = "white" }) => {
+const Contact = ({ bgColor = "#f2f2f2", textColor = "black" }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -125,7 +125,7 @@ const Contact = ({ bgColor = "#191919", textColor = "white" }) => {
             />
             <motion.button
               type="submit"
-              className="mt-4 bg-gradient-to-r from-red-500 to-[#ffa500] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#ffa500] hover:to-red-500 hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
+              className="mt-4 bg-gradient-to-r from-black to-[#144a9c] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#144a9c] hover:to-black hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
               variants={childVariants}
             >
               Send Message
