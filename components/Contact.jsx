@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 import emailjs from "emailjs-com";
 import { init } from "emailjs-com";
-init("HDYc48bYLOHynCmye"); // Please replace 'user_xyz' with your actual user ID from EmailJS
+init("HDYc48bYLOHynCmye");
 import { useToast } from "@/components/ui/use-toast";
 
 const Contact = ({ bgColor = "#f2f2f2", textColor = "black" }) => {
@@ -20,13 +20,13 @@ const Contact = ({ bgColor = "#f2f2f2", textColor = "black" }) => {
 
     const templateParams = {
       from_name: name,
-      to_name: "Your Name", // Replace with your name
+      to_name: "Your Name",
       message: `${message}\n\nContact Number: ${number}\nEmail: ${email}`,
       reply_to: email,
     };
 
     emailjs
-      .send("service_yb48z7t", "template_4lc2rna", templateParams) // Replace 'service_id', 'template_id' with your actual service and template ID from EmailJS
+      .send("service_yb48z7t", "template_4lc2rna", templateParams)
       .then(() =>
         toast({
           title: "Email Sent",
