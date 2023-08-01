@@ -12,11 +12,10 @@ import Construction from "../public/constructionlottie.json";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true); // set to true initially
-
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false); // change to false after 2 seconds
+      setIsLoading(false);
     }, 3000);
     return () => clearTimeout(timer);
   }, []);

@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 import emailjs from "emailjs-com";
 import { init } from "emailjs-com";
-init("HDYc48bYLOHynCmye"); // Please replace 'user_xyz' with your actual user ID from EmailJS
+init("HDYc48bYLOHynCmye");
 import { useToast } from "@/components/ui/use-toast";
 
-const Contact = ({ bgColor = "#191919", textColor = "white" }) => {
+const Contact = ({ bgColor = "#f2f2f2", textColor = "black" }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -20,13 +20,13 @@ const Contact = ({ bgColor = "#191919", textColor = "white" }) => {
 
     const templateParams = {
       from_name: name,
-      to_name: "Your Name", // Replace with your name
+      to_name: "Your Name",
       message: `${message}\n\nContact Number: ${number}\nEmail: ${email}`,
       reply_to: email,
     };
 
     emailjs
-      .send("service_yb48z7t", "template_4lc2rna", templateParams) // Replace 'service_id', 'template_id' with your actual service and template ID from EmailJS
+      .send("service_yb48z7t", "template_4lc2rna", templateParams)
       .then(() =>
         toast({
           title: "Email Sent",
@@ -125,7 +125,7 @@ const Contact = ({ bgColor = "#191919", textColor = "white" }) => {
             />
             <motion.button
               type="submit"
-              className="mt-4 bg-gradient-to-r from-red-500 to-[#ffa500] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#ffa500] hover:to-red-500 hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
+              className="mt-4 bg-gradient-to-r from-black to-[#144a9c] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#144a9c] hover:to-black hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
               variants={childVariants}
             >
               Send Message
