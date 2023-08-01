@@ -7,6 +7,8 @@ import emailjs from "emailjs-com";
 import { init } from "emailjs-com";
 init("HDYc48bYLOHynCmye");
 import { useToast } from "@/components/ui/use-toast";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = ({ bgColor = "#f2f2f2", textColor = "black" }) => {
   const [name, setName] = useState("");
@@ -14,9 +16,15 @@ const Contact = ({ bgColor = "#f2f2f2", textColor = "black" }) => {
   const [message, setMessage] = useState("");
   const [number, setNumber] = useState("");
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const validateForm = () => {
+    return name && email && message && number;
+  };
 
   const submitForm = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     const templateParams = {
       from_name: name,
@@ -30,7 +38,7 @@ const Contact = ({ bgColor = "#f2f2f2", textColor = "black" }) => {
       .then(() =>
         toast({
           title: "Email Sent",
-          description: "We will be in toutch shortly",
+          description: "We will be in touch shortly",
         })
       )
       .catch(() =>
@@ -39,12 +47,14 @@ const Contact = ({ bgColor = "#f2f2f2", textColor = "black" }) => {
           description:
             "Please try again and make sure all details are filled in",
         })
-      );
-
-    setName("");
-    setEmail("");
-    setMessage("");
-    setNumber("");
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+        setName("");
+        setEmail("");
+        setMessage("");
+        setNumber("");
+      });
   };
 
   const containerVariants = {
@@ -125,10 +135,15 @@ const Contact = ({ bgColor = "#f2f2f2", textColor = "black" }) => {
             />
             <motion.button
               type="submit"
-              className="mt-4 bg-gradient-to-r from-black to-[#144a9c] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#144a9c] hover:to-black hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
+              disabled={isSubmitting || !validateForm()}
+              className="mt-4 bg-gradient-to-r from-black to-[#144a9c] text-white w-[150px] h-[50px] font-bold rounded hover:bg-gradient-to-r hover:from-[#144a9c] hover:to-black hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
               variants={childVariants}
             >
-              Send Message
+              {isSubmitting ? (
+                <FontAwesomeIcon icon={faSpinner} spin />
+              ) : (
+                "Send Message"
+              )}
             </motion.button>
           </form>
         </motion.div>
