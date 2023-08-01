@@ -19,11 +19,21 @@ const Footer = () => {
         <div className="contact-details text-white">
           <div className="flex items-center justify-center mb-2">
             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-            <p>Email: louis@lanzaconstruction.com</p>
+            <a
+              href="mailto:louis@lanzaconstruction.com"
+              className="text-white hover:text-[#ffa500]"
+            >
+              Email: louis@lanzaconstruction.com
+            </a>
           </div>
           <div className="flex items-center justify-center">
             <FontAwesomeIcon icon={faPhone} className="mr-2" />
-            <p>Phone: 073 424 5280</p>
+            <a
+              href="tel:0734245280"
+              className="text-white hover:text-[#ffa500]"
+            >
+              Phone: 073 424 5280
+            </a>
           </div>
         </div>
         <div className="social-media flex justify-center">
