@@ -135,7 +135,11 @@ const What = () => {
                         glass walls on all four sides. Enjoy a hassle-free
                         experience as the project is supplied and built as a
                         complete turnkey solution.
-                        <Image src={PaddleCourt} />
+                        <Image
+                          alt="Padel Court"
+                          loading="eager"
+                          src={PaddleCourt}
+                        />
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
@@ -167,7 +171,11 @@ const What = () => {
                         within any Padel environment. As always, we provide a
                         seamless turnkey project experience, from supply to
                         construction.
-                        <Image src={PaddleCourt1} />
+                        <Image
+                          alt="Padel Court"
+                          loading="eager"
+                          src={PaddleCourt1}
+                        />
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-3">
@@ -197,7 +205,11 @@ const What = () => {
                         construction. Get ready to immerse yourself in the
                         ultimate Padel experience with our exceptional court
                         design.
-                        <Image src={PaddleCourt2} />
+                        <Image
+                          alt="Padel Court"
+                          loading="eager"
+                          src={PaddleCourt2}
+                        />
                       </AccordionContent>
                     </AccordionItem>
                     <div className="flex justify-between content-center items-center my-5 flex-wrap">

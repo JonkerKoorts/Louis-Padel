@@ -51,7 +51,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
         <div className="text-2xl font-bold text-white md:text-3xl">
           <Link href="/">
-            <Image width="80" src={Logo} />
+            <Image alt="Logo" loading="eager" width="80" src={Logo} />
           </Link>
         </div>
         <div className="md:hidden">

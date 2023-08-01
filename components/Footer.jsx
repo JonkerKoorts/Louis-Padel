@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="logo text-2xl font-bold text-white mb-4 md:mb-0">
           <Link href="/">
             {" "}
-            <Image width="80" src={Logo} />
+            <Image alt="Logo" loading="eager" width="80" src={Logo} />
           </Link>
         </div>
         <div className="contact-details text-white">
