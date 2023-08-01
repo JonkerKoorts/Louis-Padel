@@ -74,7 +74,7 @@ const Hero = () => {
           className="text-[40px] font-bold bg-gradient-to-r from-[#144a9c] to-white text-transparent bg-clip-text"
           variants={childVariants}
         >
-          Welcome to Padel Pro
+          Welcome to Courtside Constructions
         </motion.h2>
 
         <br className="hidden md:block" />
@@ -106,7 +106,8 @@ const Hero = () => {
           className="text-sm md:text-base font-light font-bold"
           variants={childVariants}
         >
-          Elevate your game and experience the thrill of Padel with Padel Pro.
+          Elevate your game and experience the thrill of Padel with Courtside
+          Constructions.
         </motion.p>
         <br />
         <motion.button

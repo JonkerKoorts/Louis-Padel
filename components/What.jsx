@@ -14,6 +14,10 @@ import { Player } from "video-react"; // import the video-react components
 import "video-react/dist/video-react.css";
 import Lottie from "lottie-react";
 import Construction from "../public/constructionlottie.json";
+import Image from "next/image";
+import PaddleCourt from "../public/Paddlecourt.jpg";
+import PaddleCourt1 from "../public/paddlecourt1.jpg";
+import PaddleCourt2 from "../public/paddlecourt2.jpg";
 
 const What = () => {
   const router = useRouter();
@@ -73,12 +77,13 @@ const What = () => {
                 >
                   Padel is one of the fastest growing sports in the world. As a
                   result, there is an increasing demand for high-quality padel
-                  courts. Padel Pro is a South African enterprise that takes
-                  immense pride in crafting, producing, and setting up top-tier
-                  padel courts to industry standards. By harnessing locally
-                  sourced materials, Padel Pro presents Padel Solutions, a
-                  comprehensive service that delivers the required expertise for
-                  the installation of personalised court structures.
+                  courts. Courtside Constructions is a South African enterprise
+                  that takes immense pride in crafting, producing, and setting
+                  up top-tier padel courts to industry standards. By harnessing
+                  locally sourced materials, Courtside Constructions presents
+                  Padel Solutions, a comprehensive service that delivers the
+                  required expertise for the installation of personalised court
+                  structures.
                 </motion.p>
                 <br className="hide-on-mobile" />
                 <br className="hide-on-mobile" />
@@ -130,6 +135,7 @@ const What = () => {
                         glass walls on all four sides. Enjoy a hassle-free
                         experience as the project is supplied and built as a
                         complete turnkey solution.
+                        <Image src={PaddleCourt} />
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
@@ -161,6 +167,7 @@ const What = () => {
                         within any Padel environment. As always, we provide a
                         seamless turnkey project experience, from supply to
                         construction.
+                        <Image src={PaddleCourt1} />
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-3">
@@ -190,32 +197,18 @@ const What = () => {
                         construction. Get ready to immerse yourself in the
                         ultimate Padel experience with our exceptional court
                         design.
+                        <Image src={PaddleCourt2} />
                       </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem value="item-4">
-                      <AccordionTrigger
-                        onClick={() => setActiveItem("item-4")}
-                        onClose={() => setActiveItem(null)}
+                    <div className="flex justify-between content-center items-center my-5 flex-wrap">
+                      <p>What is my Return on investment?</p>
+                      <button
+                        onClick={handleAbout}
+                        className="mt-4 bg-gradient-to-r from-black to-[#144a9c] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#144a9c] hover:to-black hover:transition-all transition-all hover:duration-1000 duration-1000"
                       >
-                        <div
-                          className={`font-bold ${
-                            activeItem === "item-4"
-                              ? "bg-gradient-to-l from-[#144a9c] to-black bg-clip-text text-transparent"
-                              : "text-black"
-                          }`}
-                        >
-                          What is my ROI?
-                        </div>
-                      </AccordionTrigger>
-                      <AccordionContent>
-                        <button
-                          onClick={handleAbout}
-                          className="mt-4 bg-gradient-to-r from-black to-[#144a9c] text-white px-4 py-2 font-bold rounded hover:bg-gradient-to-r hover:from-[#144a9c] hover:to-black hover:transition-all transition-all hover:duration-1000 duration-1000"
-                        >
-                          Click Here
-                        </button>
-                      </AccordionContent>
-                    </AccordionItem>
+                        Calculate
+                      </button>
+                    </div>
                   </Accordion>
                 </div>
                 <Player
