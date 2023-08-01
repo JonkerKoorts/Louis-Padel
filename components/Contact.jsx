@@ -136,7 +136,12 @@ const Contact = ({ bgColor = "#f2f2f2", textColor = "black" }) => {
             <motion.button
               type="submit"
               disabled={isSubmitting || !validateForm()}
-              className="mt-4 bg-gradient-to-r from-black to-[#144a9c] text-white w-[150px] h-[50px] font-bold rounded hover:bg-gradient-to-r hover:from-[#144a9c] hover:to-black hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000"
+              className={`mt-4 text-white w-[150px] h-[50px] font-bold rounded hover:scale-125 hover:transition-all transition-all hover:duration-1000 duration-1000
+    ${
+      isSubmitting || !validateForm()
+        ? "bg-gray-300 cursor-not-allowed"
+        : "bg-gradient-to-r from-black to-[#144a9c] hover:from-[#144a9c] hover:to-black"
+    }`}
               variants={childVariants}
             >
               {isSubmitting ? (
